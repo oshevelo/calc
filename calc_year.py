@@ -7,8 +7,8 @@ print()
 def difference_date():
     first_date = input("First date (yyyy-mm-dd): ")
     second_date = input("Second date (yyyy-mm-dd): ")
-
-    date1 = first_date.split('-')
+    #FIXME: add checks for wrong import
+    date1 = first_date.split('-')#FIXME: no need use https://www.programiz.com/python-programming/datetime/strptime
     date2 = second_date.split('-')
 
     date_first = datetime.date(int(date1[0]), int(date1[1]), int(date1[2]))
